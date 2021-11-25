@@ -25,19 +25,19 @@ console.log(isIsogram('isogram'));
 
 // best practice
 
-function isIsogram(str) {
+function isIsogramBP(str) {
     return !/(\w).*\1/i.test(str);
 }
 
 // one more
 
-function isIsogram(str) {
+function isIsogramBP2(str) {
     return new Set(str.toUpperCase()).size == str.length;
 }
 
 // one more
 
-function isIsogram(str) {
+function isIsogramBP3(str) {
     var i, j;
     str = str.toLowerCase();
     for (i = 0; i < str.length; ++i)
